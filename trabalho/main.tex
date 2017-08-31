@@ -116,12 +116,12 @@ Embora existam diversas variantes da Batalha Naval, será utilizada como referê
 	\label{tab:embarcações}
 	\begin{tabular}{c|c|c|c}
 		\hline
-		\textbf{Embarcação} & \textbf{Sigla} & \textbf{Tamanho} & \textbf{Quantidade} \\ \hline
-		   Porta-aviões     &       P        &        5         &          1          \\ \hline
-		  embarcação de Guerra   &       N        &        4         &          1          \\ \hline
-		     Cruzador       &       C        &        3         &          1          \\ \hline
-		     Submarino      &       S        &        3         &          1          \\ \hline
-		    Destruidor      &       D        &        2         &          1          \\ \hline
+		\textbf{Embarcação}  & \textbf{Sigla} & \textbf{Tamanho} & \textbf{Quantidade} \\ \hline
+		    Porta-aviões     &       P        &        5         &          1          \\ \hline
+		Embarcação de Guerra &       N        &        4         &          1          \\ \hline
+		      Cruzador       &       C        &        3         &          1          \\ \hline
+		     Submarino       &       S        &        3         &          1          \\ \hline
+		     Destruidor      &       D        &        2         &          1          \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -150,16 +150,16 @@ Ao acessar a opção de menu \textbf{1) Jogar} o programa deverá mostrar as seg
 \begin{quote}
 	\begin{footnotesize}
 		\begin{verbatim}
-		1.1) PvP
-		1.2) PvCOM
-		1.3) Voltar
+		1) PvP
+		2) PvCOM
+		3) Voltar
 		\end{verbatim}		
 	\end{footnotesize}
 \end{quote}
 
-Sendo que a opção de menu \textbf{1.1) PvP} iniciará um jogo entre duas pessoas (\emph{players}) e a opção de menu \textbf{1.2) PvCOM} iniciará um jogo contra o computador. A opção de menu \textbf{1.3) Voltar} voltará para as opções de menu anterior (1 ao 4).
+Sendo que a opção de menu \textbf{1) PvP} iniciará um jogo entre duas pessoas (\emph{players}) e a opção de menu \textbf{2) PvCOM} iniciará um jogo contra o computador. A opção de menu \textbf{3) Voltar} voltará para as opções de menu anterior (1 ao 4).
 
-Ao iniciar uma batalha naval, opções de menu \textbf{1.1) PvP} ou \textbf{1.2) PvCOM}, cada jogador deverá:
+Ao iniciar uma batalha naval, opções de menu \textbf{1) PvP} ou \textbf{2) PvCOM}, cada jogador deverá:
 
 \begin{enumerate}
 	\item Informar seu nome. No caso do computador deverá ser estabelecido como \textbf{COM}.
@@ -187,7 +187,7 @@ O programa deve mostrar as seguintes informações de cada jogador:
 
 Quando o jogo começa, o programa deverá mostrar a matriz vazia e solicitar ao jogador para colocar as embarcações. A colocação só pode terminar depois de colocados todas as embarcações da frota. Sendo que, toda embarcação deve estar completamente na matriz, nenhum embarcação pode estar com alguma parte do lado de fora.
 
-Durante a colocação o jogador deve informar para a embarcação que está colocando uma coordenada inicial, por exemplo G 1, e solicitar a direção que deve ser colocado a embarcação. Além disso, o usuário deve confirmar se deseja posicionar a embarcação naquela direção para aquela coordenada. As direções possíveis são:
+Durante a colocação o jogador deve informar para a embarcação que está colocando uma coordenada inicial, por exemplo G1, e solicitar a direção que deve ser colocado a embarcação. Além disso, o usuário deve confirmar se deseja posicionar a embarcação naquela direção para aquela coordenada. As direções possíveis são:
 
 \begin{itemize}
 	\item \textbf{W}: Para Cima
@@ -201,7 +201,7 @@ Abaixo é mostrado um exemplo:
 \begin{quote}
 	\begin{footnotesize}
 		\begin{verbatim}
-		Informe uma coordenada para posicionar o "Porta-aviões": G 1
+		Informe uma coordenada para posicionar o "Porta-aviões": G1
 		Informe a direção que o "Porta-aviões" deve ser posicionado: W
 		Deseja confirmar a coordenada "G1" com direção "Para Cima" 
 		para a embarcação "Porta-aviões"? Sim
@@ -300,6 +300,7 @@ A função \emph{rand()} da biblioteca \emph{<stdlib.h>} retorna um pseudo-rando
 \begin{lstlisting}
 #include <time.h>
 #include <stdlib.h>
+#include <time.h>
 
 srand(time(NULL));   // deve ser chamado apenas uma vez
 int r = rand() % 10; // retorna um pseudo-random inteiro entre 0 e 9 
@@ -310,19 +311,18 @@ Outro exemplo:
 \begin{lstlisting}
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(){
-	int i, n = 5;
 	time_t t;
 	
 	// Inicializa o gerado de número aleatório		
 	srand((unsigned) time(&t)); 
 	
 	/* Mostra 5 números elatórios entre 0 e 49 */
-	for( i = 0 ; i < n ; i++ ){
+	for(int i = 0; i < 5; i++){
 		printf("%d\n", rand() % 50);
-	}
-	
+	}	
 	return(0);
 }
 \end{lstlisting}
