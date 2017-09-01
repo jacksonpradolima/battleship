@@ -1,3 +1,12 @@
+/*==============================================================================
+- | Filename: main.c 
+- | Programmer: Jackson Antonio do Prado Lima
+- | Date: September 1, 2017
+- +------------------------------------------------------------------------------                                                                       
+- | Description: This program simulates the game of Battleship. The game will be 
+  |              completely text-based.
+- ==============================================================================*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

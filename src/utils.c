@@ -1,3 +1,12 @@
+/*==============================================================================
+- | Filename: utils.c
+- | Programmer: Jackson Antonio do Prado Lima
+- | Date: September 1, 2017
+- +------------------------------------------------------------------------------                                                                       
+- | Description: The file contains all of the function prototypee and standard libraries
+- |              required to run the game of Battleship.
+- ==============================================================================*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -14,15 +23,6 @@ void initMatrix(char tabuleiro[][10]){
       }      
     }
 }
-
-/*
-int getMatrixRow(char** matrix){
-	return (sizeof(matrix)/sizeof(matrix[0]));
-}
-
-int getMatrixCol(char** matrix){
-	return (sizeof(matrix)/sizeof(matrix[0][0]))/getMatrixRow(matrix);
-}*/
 
 void printAbout(){
 	printf("**************************************************************\n");

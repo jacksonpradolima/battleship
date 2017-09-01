@@ -1,3 +1,12 @@
+/*==============================================================================
+- | Filename: utils.h 
+- | Programmer: Jackson Antonio do Prado Lima
+- | Date: September 1, 2017
+- +------------------------------------------------------------------------------                                                                       
+- | Description: The file contains all of the function prototypee and standard libraries
+- |              required to run the game of Battleship.
+- ==============================================================================*/
+
 void clearScreen();
 void initMatrix(char tabuleiro[][10]);
 void printAbout();
