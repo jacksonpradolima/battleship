@@ -149,4 +149,21 @@ void putShipsCOM(char tabuleiro[][10]);
  */
 void readCoordenate(char *line, int *col);
 
-void printResultados(char *nomeJogador, char jogadas[][10]);
+/**
+ * Mostra o resultado do jogo de um jogador. O resultado apresenta:
+ * 1) Número total de disparos realizados;
+ * 2) Número de disparos na água;
+ * 3) Número de disparos em embarcações, por tipo de embarcação (na ordem
+ *    inversa apresentada na tabela de embarcações, ou seja, começando pelo
+ *    Destruidor), e omitindo os tipos para os quais não foi atingida qualquer
+ *    embarcação;
+ * 4) Número de embarcações afundadas, por tipo de embarcação (na ordem
+ *    inversa apresentada na tabela de embarcações, ou seja, começando pelo
+ *    Destruidor), e omitindo os tipos para os quais não foi afundada qualquer
+ *    embarcação.
+ *
+ * @param nomeJogador Nome do jogador
+ * @param jogadas Jogadas realizadas pelo jogador
+ * @param tabuleiro Tabuleiro do jogador
+ */
+void printResultados(char *nomeJogador, char jogadas[][10], char tabuleiro[][10]);

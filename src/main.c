@@ -144,11 +144,18 @@ void run(int isPvCOM){
 			primeiroJogador = primeiroJogador == 0 ? 1 : 0;
 		}while(!isEndGame(primeiroJogador == 0 ? jogadas2 : jogadas1)); // Comparo o inverso pois mudei o jogador anteriormente 
 
+		displayGameInfo(nomeJogador1, jogadas1, nomeJogador2, jogadas2);
 		printf("\n\n\n FIM DE JOGO! %s venceu!\n", primeiroJogador == 0 ? nomeJogador2 : nomeJogador1);
-		//printResultados(nomeJogador1, jogadas1);
+
+		sleep(2);
+		clearScreen();
+		printBattleship();
+		printResultados(nomeJogador1, jogadas1, tabuleiro1);
 		printf("\n");
-		//printResultados(nomeJogador2, jogadas2);
-		printf("Pressione S para jogar novamente ou N para sair.");
+		printResultados(nomeJogador2, jogadas2, tabuleiro2);
+		printf("\n\n\n\n\n");
+		printf("Pressione S para jogar novamente ou N para sair: ");
+
 		do{
 			scanf(" %c", &jogarNovamente);
 			if(jogarNovamente != 'S' && jogarNovamente != 'N'){
@@ -156,7 +163,10 @@ void run(int isPvCOM){
 			}
 		}while(jogarNovamente != 'S' && jogarNovamente != 'N');
 
-		if(jogarNovamente != 'S'){
+		if(jogarNovamente == 'S'){
+			clearScreen();
+			printBattleship();
+		}else{
 			break;
 		}
 	}
