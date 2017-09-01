@@ -12,10 +12,18 @@
 #include <string.h>
 #include <time.h>
 
+/**
+ * Limpa a tela do console
+ */
 void clearScreen(){
   system("@cls||clear");
 }
 
+/**
+ * Inicializo cada posição do tabuleiro do jogador com '.'
+ * 
+ * @param tabuleiro Tabuleiro do jogador
+ */
 void initMatrix(char tabuleiro[][10]){
     for (int i = 0; i < 10; i++) {      
       for (int j = 0; j < 10; j++) {
@@ -24,6 +32,9 @@ void initMatrix(char tabuleiro[][10]){
     }
 }
 
+/**
+ * Mostra as informações sobre o jogo
+ */
 void printAbout(){
 	printf("**************************************************************\n");
 	printf("*Bem-vindo ao jogo de batalha naval! - Exemplo trabalho UFPR *\n");
@@ -32,6 +43,12 @@ void printAbout(){
 	printf("Esse exemplo foi desenvolvido por Jackson Antonio do Prado Lima.\n\n\n");
 }
 
+/**
+ * Realiza o print de uma string de modo centralizado
+ * 
+ * @param space Espaço máximo em que a string deverá ser centralizada
+ * @param string String a ser mostrada
+ */
 void printAlign(int space, char *string){
 	 int length = strlen(string);
 
@@ -43,6 +60,9 @@ void printAlign(int space, char *string){
     );
 }
 
+/**
+ * Mostra o nome do jogo de modo estilizado
+ */
 void printBattleship(){
 	printf ("XXXXX   XXXX  XXXXXX XXXXXX XX     XXXXXX  XXXXX XX  XX XX XXXX\n");
 	printf ("XX  XX XX  XX   XX     XX   XX     XX     XX     XX  XX XX XX  XX\n");
@@ -52,6 +72,9 @@ void printBattleship(){
 	printf ("\n\n");
 }
 
+/**
+ * Mostra as opções de menu iniciais
+ */
 void printMenu1(){
 	printf ("Escolha uma opção:\n");
 	printf ("1) Jogar\n");	
@@ -59,6 +82,9 @@ void printMenu1(){
 	printf ("3) Sair\n\n");
 }
 
+/**
+ * Mostra as opções de menu secundárias presentes ao clicar no menu inicial 1) Jogar
+ */
 void printMenu2(){
 	printf ("Escolha uma opção:\n");	
 	printf ("1) PvCOM\n");
@@ -66,8 +92,10 @@ void printMenu2(){
 	printf ("3) Voltar\n\n");	
 }
 
-const char * directionMessage(char direction)
-{
+/**
+ * Retorna a mensagem correspondende à cada direção
+ */
+const char * directionMessage(char direction){
 	switch(direction){
 		case 'W':
 			return "Para Cima";
@@ -80,8 +108,10 @@ const char * directionMessage(char direction)
 	} 
 }
 
-const char * shipName(char ship)
-{
+/**
+ * Retorna o nome da embarcação de acordo com a sigla
+ */
+const char * shipName(char ship){
 	switch(ship){
 		case 'P':
 			return "Porta-aviões";
@@ -96,8 +126,10 @@ const char * shipName(char ship)
 	} 
 }
 
-const int getShipSize(char ship)
-{
+/**
+ * Retorna o tamanho da embarcação de acordo com a sigla
+ */
+const int getShipSize(char ship){
 	switch(ship){
 		case 'P':
 			return 5;

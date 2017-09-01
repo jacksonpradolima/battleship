@@ -7,16 +7,59 @@
 - |              required to run the game of Battleship.
 - ==============================================================================*/
 
+/**
+ * Limpa a tela do console
+ */
 void clearScreen();
+
+/**
+ * Inicializo cada posição do tabuleiro do jogador com '.'
+ * 
+ * @param tabuleiro Tabuleiro do jogador
+ */
 void initMatrix(char tabuleiro[][10]);
+
+/**
+ * Mostra as informações sobre o jogo
+ */
 void printAbout();
+
+/**
+ * Realiza o print de uma string de modo centralizado
+ * 
+ * @param space Espaço máximo em que a string deverá ser centralizada
+ * @param string String a ser mostrada
+ */
 void printAlign(int space, char *string);
+
+/**
+ * Mostra o nome do jogo de modo estilizado
+ */
 void printBattleship();
-void printMatrix(char matrix[][10]);
+
+/**
+ * Mostra as opções de menu iniciais
+ */
 void printMenu1();
+
+/**
+ * Mostra as opções de menu secundárias presentes ao clicar no menu inicial 1) Jogar
+ */
 void printMenu2();
+
+/**
+ * Retorna a mensagem correspondende à cada direção
+ */
 const char * directionMessage(char direction);
+
+/**
+ * Retorna o nome da embarcação de acordo com a sigla
+ */
 const char * shipName(char ship);
+
+/**
+ * Retorna o tamanho da embarcação de acordo com a sigla
+ */
 const int getShipSize(char ship);
 
 /**
@@ -39,6 +82,15 @@ int checkThreshold(char line, int col);
  * @return 1 se a coordenada é válido, 0 caso contrário
  */
 int checkCoordenate(char shipType, char line, int col, char direction, char tabuleiro[][10]);
+
+/**
+ * Realiza a leitura de uma coordenada para o tabuleiro.
+ * A leitura continua até que uma coordenada válida seja informada.
+ * 
+ * @param *line Ponteiro de uma variável para ser a linha da matriz
+ * @param *col Ponteiro de uma variável para ser a coluna da matriz
+ */
+void readCoordenate(char *line, int *col);
 
 /**
  * Verifica o resultado de uma jogada (disparo) da batalha naval
@@ -95,6 +147,14 @@ void displayGameInfo(char *nomeJogador1, char jogadas1[][10], char *nomeJogador2
 void displayGamePlayer(char* nomeJogador, char tabuleiro[][10]);
 
 /**
+ * Verifica se o jogo já acabou
+ * 
+ * @param jogadas Tabuleiro de jogadas de algum jogador
+ * @return Retorna 1 se todas as embarcações foram afundadas, 0 caso contrário
+ */
+ int isEndGame(char jogadas[][10]);
+
+/**
  * Realiza uma jogada (disparo) da batalha naval por um jogador
  * 
  * @param jogadas Jogadas realizadas pelo jogador até o momento.
@@ -113,14 +173,6 @@ void giveShot(char jogadas[][10], char tabuleiroAdversario[][10], char *nomeJoga
  * @param nomeAdversario Nome do adversário
  */
 void giveRandomShot(char jogadas[][10], char tabuleiroAdversario[][10], char *nomeJogador, char *nomeAdversario);
-
-/**
- * Verifica se o jogo já acabou
- * 
- * @param jogadas Tabuleiro de jogadas de algum jogador
- * @return Retorna 1 se todas as embarcações foram afundadas, 0 caso contrário
- */
- int isEndGame(char jogadas[][10]);
 
 /**
  * Coloca uma embarcação no tabulerio
@@ -148,15 +200,6 @@ void putShips(char *nomeJogador, char tabuleiro[][10]);
  * @param tabuleiro Tabuleiro da máquina
  */
 void putShipsCOM(char tabuleiro[][10]);
-
- /**
- * Realiza a leitura de uma coordenada para o tabuleiro.
- * A leitura continua até que uma coordenada válida seja informada.
- * 
- * @param *line Ponteiro de uma variável para ser a linha da matriz
- * @param *col Ponteiro de uma variável para ser a coluna da matriz
- */
-void readCoordenate(char *line, int *col);
 
 /**
  * Mostra o resultado do jogo de um jogador. O resultado apresenta:
