@@ -1,2 +1,2 @@
 # battleship
-Some examples of battleship using C
+Battleship in C with options in Portuguese
