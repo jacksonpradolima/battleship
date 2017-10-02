@@ -164,13 +164,12 @@ int main(){
 							clearScreen();
 							printBattleship();
 							printMenu2();
-							break;
-						case '3':break;
+							break;		
+						case '3': break;
 						default:
-							printf("Opção de menu inválida!\n");
+							printf("Opção de menu inválida!\n");				
 					}
-
-				}while((optionMenu2)!= '2');
+				}while(optionMenu2 != '3');
 
 				clearScreen();
 				printBattleship();
@@ -181,12 +180,12 @@ int main(){
 				printBattleship();
 				printAbout();
 				printMenu1();
-				break;
+				break;		
 			case '3': break;
 			default:
-				printf("Opção de menu inválida!\n");
+				printf("Opção de menu inválida!\n");	
 		}
-	}while((optionMenu1 = getchar())!= '3');
+	}while(optionMenu1 != '3');
 
 	return(0);
 }
