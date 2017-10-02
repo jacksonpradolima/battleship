@@ -1,0 +1,155 @@
+\begin{theindex}
+
+  \item {check\+Coordenate}
+    \subitem {utils.\+c}, \hyperpage{7}
+    \subitem {utils.\+h}, \hyperpage{25}
+  \item {check\+Shot}
+    \subitem {utils.\+c}, \hyperpage{8}
+    \subitem {utils.\+h}, \hyperpage{26}
+  \item {check\+Threshold}
+    \subitem {utils.\+c}, \hyperpage{9}
+    \subitem {utils.\+h}, \hyperpage{27}
+  \item {clear\+Screen}
+    \subitem {utils.\+c}, \hyperpage{10}
+    \subitem {utils.\+h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {direction\+Message}
+    \subitem {utils.\+c}, \hyperpage{10}
+    \subitem {utils.\+h}, \hyperpage{28}
+  \item {display\+Game\+Info}
+    \subitem {utils.\+c}, \hyperpage{10}
+    \subitem {utils.\+h}, \hyperpage{28}
+  \item {display\+Game\+Player}
+    \subitem {utils.\+c}, \hyperpage{12}
+    \subitem {utils.\+h}, \hyperpage{30}
+
+  \indexspace
+
+  \item {get\+Ship\+Size}
+    \subitem {utils.\+c}, \hyperpage{13}
+    \subitem {utils.\+h}, \hyperpage{30}
+  \item {give\+Random\+Shot}
+    \subitem {utils.\+c}, \hyperpage{13}
+    \subitem {utils.\+h}, \hyperpage{31}
+  \item {give\+Shot}
+    \subitem {utils.\+c}, \hyperpage{14}
+    \subitem {utils.\+h}, \hyperpage{31}
+
+  \indexspace
+
+  \item {init\+Matrix}
+    \subitem {utils.\+c}, \hyperpage{15}
+    \subitem {utils.\+h}, \hyperpage{32}
+  \item {is\+End\+Game}
+    \subitem {utils.\+c}, \hyperpage{15}
+    \subitem {utils.\+h}, \hyperpage{33}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.\+c}, \hyperpage{4}
+  \item {main.\+c}, \hyperpage{3}
+    \subitem {main}, \hyperpage{4}
+    \subitem {run}, \hyperpage{4}
+    \subitem {S\+I\+ZE}, \hyperpage{3}
+
+  \indexspace
+
+  \item {print\+About}
+    \subitem {utils.\+c}, \hyperpage{16}
+    \subitem {utils.\+h}, \hyperpage{33}
+  \item {print\+Align}
+    \subitem {utils.\+c}, \hyperpage{16}
+    \subitem {utils.\+h}, \hyperpage{34}
+  \item {print\+Battleship}
+    \subitem {utils.\+c}, \hyperpage{17}
+    \subitem {utils.\+h}, \hyperpage{34}
+  \item {print\+Menu1}
+    \subitem {utils.\+c}, \hyperpage{17}
+    \subitem {utils.\+h}, \hyperpage{35}
+  \item {print\+Menu2}
+    \subitem {utils.\+c}, \hyperpage{17}
+    \subitem {utils.\+h}, \hyperpage{35}
+  \item {print\+Resultados}
+    \subitem {utils.\+c}, \hyperpage{18}
+    \subitem {utils.\+h}, \hyperpage{35}
+  \item {put\+Ship}
+    \subitem {utils.\+c}, \hyperpage{20}
+    \subitem {utils.\+h}, \hyperpage{37}
+  \item {put\+Ships}
+    \subitem {utils.\+c}, \hyperpage{21}
+    \subitem {utils.\+h}, \hyperpage{38}
+  \item {put\+Ships\+C\+OM}
+    \subitem {utils.\+c}, \hyperpage{22}
+    \subitem {utils.\+h}, \hyperpage{39}
+
+  \indexspace
+
+  \item {read\+Coordenate}
+    \subitem {utils.\+c}, \hyperpage{23}
+    \subitem {utils.\+h}, \hyperpage{41}
+  \item {run}
+    \subitem {main.\+c}, \hyperpage{4}
+
+  \indexspace
+
+  \item {S\+I\+ZE}
+    \subitem {main.\+c}, \hyperpage{3}
+  \item {ship\+Name}
+    \subitem {utils.\+c}, \hyperpage{24}
+    \subitem {utils.\+h}, \hyperpage{41}
+
+  \indexspace
+
+  \item {utils.\+c}, \hyperpage{6}
+    \subitem {check\+Coordenate}, \hyperpage{7}
+    \subitem {check\+Shot}, \hyperpage{8}
+    \subitem {check\+Threshold}, \hyperpage{9}
+    \subitem {clear\+Screen}, \hyperpage{10}
+    \subitem {direction\+Message}, \hyperpage{10}
+    \subitem {display\+Game\+Info}, \hyperpage{10}
+    \subitem {display\+Game\+Player}, \hyperpage{12}
+    \subitem {get\+Ship\+Size}, \hyperpage{13}
+    \subitem {give\+Random\+Shot}, \hyperpage{13}
+    \subitem {give\+Shot}, \hyperpage{14}
+    \subitem {init\+Matrix}, \hyperpage{15}
+    \subitem {is\+End\+Game}, \hyperpage{15}
+    \subitem {print\+About}, \hyperpage{16}
+    \subitem {print\+Align}, \hyperpage{16}
+    \subitem {print\+Battleship}, \hyperpage{17}
+    \subitem {print\+Menu1}, \hyperpage{17}
+    \subitem {print\+Menu2}, \hyperpage{17}
+    \subitem {print\+Resultados}, \hyperpage{18}
+    \subitem {put\+Ship}, \hyperpage{20}
+    \subitem {put\+Ships}, \hyperpage{21}
+    \subitem {put\+Ships\+C\+OM}, \hyperpage{22}
+    \subitem {read\+Coordenate}, \hyperpage{23}
+    \subitem {ship\+Name}, \hyperpage{24}
+  \item {utils.\+h}, \hyperpage{24}
+    \subitem {check\+Coordenate}, \hyperpage{25}
+    \subitem {check\+Shot}, \hyperpage{26}
+    \subitem {check\+Threshold}, \hyperpage{27}
+    \subitem {clear\+Screen}, \hyperpage{28}
+    \subitem {direction\+Message}, \hyperpage{28}
+    \subitem {display\+Game\+Info}, \hyperpage{28}
+    \subitem {display\+Game\+Player}, \hyperpage{30}
+    \subitem {get\+Ship\+Size}, \hyperpage{30}
+    \subitem {give\+Random\+Shot}, \hyperpage{31}
+    \subitem {give\+Shot}, \hyperpage{31}
+    \subitem {init\+Matrix}, \hyperpage{32}
+    \subitem {is\+End\+Game}, \hyperpage{33}
+    \subitem {print\+About}, \hyperpage{33}
+    \subitem {print\+Align}, \hyperpage{34}
+    \subitem {print\+Battleship}, \hyperpage{34}
+    \subitem {print\+Menu1}, \hyperpage{35}
+    \subitem {print\+Menu2}, \hyperpage{35}
+    \subitem {print\+Resultados}, \hyperpage{35}
+    \subitem {put\+Ship}, \hyperpage{37}
+    \subitem {put\+Ships}, \hyperpage{38}
+    \subitem {put\+Ships\+C\+OM}, \hyperpage{39}
+    \subitem {read\+Coordenate}, \hyperpage{41}
+    \subitem {ship\+Name}, \hyperpage{41}
+
+\end{theindex}

@@ -1,0 +1,247 @@
+\hypertarget{main_8c}{}\section{main.\+c File Reference}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{S\+I\+ZE}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_a8ff4ae8bd48d4716785cd92d70deda7b}{run} (int is\+Pv\+C\+OM)
+\item 
+int \hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8c_a70ed59adcb4159ac551058053e649640}\label{main_8c_a70ed59adcb4159ac551058053e649640}} 
+\index{main.\+c@{main.\+c}!S\+I\+ZE@{S\+I\+ZE}}
+\index{S\+I\+ZE@{S\+I\+ZE}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{S\+I\+ZE}{SIZE}}
+{\footnotesize\ttfamily \#define S\+I\+ZE~10}
+
+
+
+Definition at line 17 of file main.\+c.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 131 of file main.\+c.
+
+
+\begin{DoxyCode}
+131           \{
+132     \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+133     \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+134     \hyperlink{utils_8c_a087a2b7743093438ffebaedb708e3283}{printMenu1}();
+135 
+136     \textcolor{keywordtype}{char} optionMenu1;
+137     \textcolor{keywordtype}{char} optionMenu2;
+138 
+139     \textcolor{keywordflow}{do}\{
+140         scanf(\textcolor{stringliteral}{" %c"}, &optionMenu1);
+141         \textcolor{keywordflow}{switch}(optionMenu1)\{
+142             \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:
+143                 \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+144                 \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+145                 \hyperlink{utils_8c_a4f2acb39a12d6c7570980ae92ec9befc}{printMenu2}();
+146 
+147                 \textcolor{keywordflow}{do}\{
+148                     scanf(\textcolor{stringliteral}{" %c"}, &optionMenu2);
+149                     \textcolor{keywordflow}{switch}(optionMenu2)\{
+150                         \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:
+151                             \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+152                             \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+153                             printf(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nBem-vindo à opção de jogo PvCOM!\(\backslash\)n\(\backslash\)n\(\backslash\)n"});
+154                             \hyperlink{main_8c_a8ff4ae8bd48d4716785cd92d70deda7b}{run}(1);
+155                             \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+156                             \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+157                             \hyperlink{utils_8c_a4f2acb39a12d6c7570980ae92ec9befc}{printMenu2}();
+158                             \textcolor{keywordflow}{break};
+159                         \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:
+160                             \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+161                             \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+162                             printf(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nBem-vindo à opção de jogo PvP!\(\backslash\)n\(\backslash\)n\(\backslash\)n"});
+163                             \hyperlink{main_8c_a8ff4ae8bd48d4716785cd92d70deda7b}{run}(0);
+164                             \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+165                             \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+166                             \hyperlink{utils_8c_a4f2acb39a12d6c7570980ae92ec9befc}{printMenu2}();
+167                             \textcolor{keywordflow}{break};
+168                         \textcolor{keywordflow}{case} \textcolor{charliteral}{'3'}:\textcolor{keywordflow}{break};
+169                         \textcolor{keywordflow}{default}:
+170                             printf(\textcolor{stringliteral}{"Opção de menu inválida!\(\backslash\)n"});
+171                     \}
+172 
+173                 \}\textcolor{keywordflow}{while}((optionMenu2)!= \textcolor{charliteral}{'2'});
+174 
+175                 \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+176                 \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+177                 \hyperlink{utils_8c_a087a2b7743093438ffebaedb708e3283}{printMenu1}();
+178                 \textcolor{keywordflow}{break};
+179             \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:
+180                 \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+181                 \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+182                 \hyperlink{utils_8c_a4898a09411ad503295bdbe640b05dd10}{printAbout}();
+183                 \hyperlink{utils_8c_a087a2b7743093438ffebaedb708e3283}{printMenu1}();
+184                 \textcolor{keywordflow}{break};
+185             \textcolor{keywordflow}{case} \textcolor{charliteral}{'3'}: \textcolor{keywordflow}{break};
+186             \textcolor{keywordflow}{default}:
+187                 printf(\textcolor{stringliteral}{"Opção de menu inválida!\(\backslash\)n"});
+188         \}
+189     \}\textcolor{keywordflow}{while}((optionMenu1 = getchar())!= \textcolor{charliteral}{'3'});
+190 
+191     \textcolor{keywordflow}{return}(0);
+192 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a8ff4ae8bd48d4716785cd92d70deda7b}\label{main_8c_a8ff4ae8bd48d4716785cd92d70deda7b}} 
+\index{main.\+c@{main.\+c}!run@{run}}
+\index{run@{run}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void run (\begin{DoxyParamCaption}\item[{int}]{is\+Pv\+C\+OM }\end{DoxyParamCaption})}
+
+Executa o jogo com as opções\+: 0 se deseja jogar PvP, 1 se deseja jogar Pv\+C\+OM
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Pv\+C\+OM} & Defini o tipo de jogo\+: 0 PvP ou 1 Pv\+C\+OM \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file main.\+c.
+
+
+\begin{DoxyCode}
+24                      \{
+25     \textcolor{keywordflow}{while}(1)\{
+26         \textcolor{comment}{// inicio o tabuleiro para o primeiro jogador}
+27         \textcolor{keywordtype}{char} tabuleiro1[\hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{SIZE}][\hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{SIZE}];
+28         \textcolor{keywordtype}{char} jogadas1[\hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{SIZE}][\hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{SIZE}];
+29         \textcolor{keywordtype}{char} nomeJogador1[100];
+30 
+31         printf(\textcolor{stringliteral}{"Jogador 1, informe o seu nome: "});
+32         scanf(\textcolor{stringliteral}{"%s"}, nomeJogador1);
+33         \hyperlink{utils_8c_a821efd1de9257a6ac8bce69ecc1e5dfc}{initMatrix}(jogadas1);
+34         \hyperlink{utils_8c_a8dbfb8ff4e945c557e1baa84ca1c39fa}{putShips}(nomeJogador1, tabuleiro1);
+35 
+36         \textcolor{comment}{// inicio o tabuleiro para o segundo jogador}
+37         \textcolor{keywordtype}{char} tabuleiro2[\hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{SIZE}][\hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{SIZE}];
+38         \textcolor{keywordtype}{char} jogadas2[\hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{SIZE}][\hyperlink{main_8c_a70ed59adcb4159ac551058053e649640}{SIZE}];
+39         \textcolor{keywordtype}{char} nomeJogador2[100] = \textcolor{stringliteral}{"COMPUTER"}; \textcolor{comment}{// Nome default}
+40         \hyperlink{utils_8c_a821efd1de9257a6ac8bce69ecc1e5dfc}{initMatrix}(jogadas2);
+41 
+42         \textcolor{comment}{// Se o jogo for PvCOM gero um tabuleiro aleatório para o COMPUTER.}
+43         \textcolor{comment}{// Caso contrário o Jogador 2 deve informar seu nome e posicionar o seu tabuleiro.}
+44         \textcolor{keywordflow}{if}(isPvCOM)\{
+45             \hyperlink{utils_8c_ac2fd4847b2382dbddfea8eb84c01cdad}{putShipsCOM}(tabuleiro2);
+46         \}\textcolor{keywordflow}{else}\{
+47             printf(\textcolor{stringliteral}{"Jogador 2, informe o seu nome: "});
+48             scanf(\textcolor{stringliteral}{"%s"}, nomeJogador2);
+49             \hyperlink{utils_8c_a8dbfb8ff4e945c557e1baa84ca1c39fa}{putShips}(nomeJogador2, tabuleiro1);
+50         \}
+51 
+52         \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+53         \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+54 
+55         \textcolor{comment}{// Defino quem irá iniciar o jogo}
+56         \textcolor{keywordtype}{char} moeda;
+57         printf(\textcolor{stringliteral}{"Jogador 1, escolha cara (C) ou coroa (O): "});
+58         \textcolor{keywordflow}{do}\{
+59             scanf(\textcolor{stringliteral}{" %c"}, &moeda);
+60             \textcolor{keywordflow}{if}(moeda != \textcolor{charliteral}{'C'} && moeda != \textcolor{charliteral}{'O'})\{
+61                 printf(\textcolor{stringliteral}{"Opção inválida! Tente novamente.\(\backslash\)n"});
+62             \}
+63         \}\textcolor{keywordflow}{while}(moeda != \textcolor{charliteral}{'C'} && moeda != \textcolor{charliteral}{'O'});
+64         
+65         srand(time(NULL));
+66         \textcolor{keywordtype}{int} primeiroJogador = 2 * (rand() / ((double)RAND\_MAX + 1));
+67 
+68         \textcolor{keywordtype}{char} jogarNovamente;
+69         \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+70         \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+71 
+72         printf(\textcolor{stringliteral}{"O jogador %s irá começar! Preparem-se! \(\backslash\)n\(\backslash\)n"}, (primeiroJogador == (moeda == \textcolor{charliteral}{'C'} ? 0 : 1)) ?
+       nomeJogador1 : nomeJogador2);
+73         
+74         sleep(2);
+75 
+76         \textcolor{comment}{// Jogo}
+77         \textcolor{keywordflow}{do}\{
+78             \hyperlink{utils_8c_abec49bb0c079b81567289b409b10e4d9}{displayGameInfo}(nomeJogador1, jogadas1, nomeJogador2, jogadas2);
+79             printf(\textcolor{stringliteral}{"\(\backslash\)nAgora é a vez do %s \(\backslash\)n"}, primeiroJogador == 0 ? nomeJogador1 : nomeJogador2);
+80             \textcolor{keywordflow}{switch}(primeiroJogador)\{
+81                 \textcolor{keywordflow}{case} 0:
+82                     \textcolor{comment}{// Jogador 1}
+83                     \hyperlink{utils_8c_a53aa17bcb66102859da0e09b78412911}{giveShot}(jogadas1, tabuleiro2, nomeJogador1, nomeJogador2);
+84                     \textcolor{keywordflow}{break};
+85                 \textcolor{keywordflow}{case} 1:
+86                     \textcolor{comment}{// Jogador 2}
+87                     \textcolor{keywordflow}{if}(isPvCOM)\{
+88                         sleep(2);
+89                         \hyperlink{utils_8c_a916e66ee495d0e5ac7d061cb882381f9}{giveRandomShot}(jogadas2, tabuleiro1, nomeJogador2, nomeJogador1);
+90                     \}\textcolor{keywordflow}{else}\{
+91                         \hyperlink{utils_8c_a53aa17bcb66102859da0e09b78412911}{giveShot}(jogadas2, tabuleiro1, nomeJogador2, nomeJogador1);
+92                     \}
+93                     \textcolor{keywordflow}{break};
+94             \}
+95 
+96             \textcolor{comment}{// Alterno a jogada}
+97             primeiroJogador = primeiroJogador == 0 ? 1 : 0;
+98         \}\textcolor{keywordflow}{while}(!\hyperlink{utils_8c_af4cf37339d3d98a2cbe99929874d9f02}{isEndGame}(primeiroJogador == 0 ? jogadas2 : jogadas1)); \textcolor{comment}{// Comparo o inverso pois
+       mudei o jogador anteriormente }
+99 
+100         \hyperlink{utils_8c_abec49bb0c079b81567289b409b10e4d9}{displayGameInfo}(nomeJogador1, jogadas1, nomeJogador2, jogadas2);
+101         printf(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)n\(\backslash\)n FIM DE JOGO! %s venceu!\(\backslash\)n"}, primeiroJogador == 0 ? nomeJogador2 : nomeJogador1);
+102 
+103         \textcolor{comment}{// Mostro os resultados}
+104         sleep(2);
+105         \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+106         \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+107         \hyperlink{utils_8c_a450dd23155e8a975d341985f105342c3}{printResultados}(nomeJogador1, jogadas1, tabuleiro1);
+108         printf(\textcolor{stringliteral}{"\(\backslash\)n"});
+109         \hyperlink{utils_8c_a450dd23155e8a975d341985f105342c3}{printResultados}(nomeJogador2, jogadas2, tabuleiro2);
+110         
+111         \textcolor{comment}{// Novo jogo?}
+112         printf(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n"});
+113         printf(\textcolor{stringliteral}{"Pressione S para jogar novamente ou N para sair: "});
+114 
+115         \textcolor{keywordflow}{do}\{
+116             scanf(\textcolor{stringliteral}{" %c"}, &jogarNovamente);
+117             \textcolor{keywordflow}{if}(jogarNovamente != \textcolor{charliteral}{'S'} && jogarNovamente != \textcolor{charliteral}{'N'})\{
+118                 printf(\textcolor{stringliteral}{"Opção inválida! Tente novamente.\(\backslash\)n"});
+119             \}
+120         \}\textcolor{keywordflow}{while}(jogarNovamente != \textcolor{charliteral}{'S'} && jogarNovamente != \textcolor{charliteral}{'N'});
+121 
+122         \textcolor{keywordflow}{if}(jogarNovamente == \textcolor{charliteral}{'S'})\{
+123             \hyperlink{utils_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}();
+124             \hyperlink{utils_8c_a1ea6231221c4e03a66d89d0c38aa71cc}{printBattleship}();
+125         \}\textcolor{keywordflow}{else}\{
+126             \textcolor{keywordflow}{break};
+127         \}
+128     \}
+129 \}
+\end{DoxyCode}
